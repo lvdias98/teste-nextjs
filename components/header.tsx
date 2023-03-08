@@ -11,7 +11,7 @@ export default function Header() {
           <title>TESTE NEXT JS 'header'</title>
         </Head>
         <header className={headerStyle.header}>
-            <h1 className={headerStyle.h1}>Olá, sou <span>Fabio Brasil</span></h1>
+            <h1>Olá, sou <span>Fabio Brasil</span></h1>
             <Image 
                 className={headerStyle.emoji}
                 src={emojiHand}

@@ -7,11 +7,12 @@ import Header from '@/components/header'
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  let varText = 'TESTE NextJS'
   return (
     <>
       <Header />
       <main className={styles.main}>
-        <h1>NEXT JS TESTE</h1>
+        <h1>{varText}</h1>
       </main>
     </>
   )
