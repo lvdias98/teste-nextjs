@@ -3,6 +3,8 @@ import Head from 'next/head'
 import headerStyle from '@/styles/Header.module.css'
 import Image from 'next/image'
 import emojiHand from '@/public/emoji-png-0165.png'
+import Link from 'next/link'
+
 
 export default function Header() {
     return (

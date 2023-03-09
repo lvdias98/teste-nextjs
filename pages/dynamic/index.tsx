@@ -11,19 +11,15 @@ import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
-  let varText = 'TESTE NextJS';
+export default function Dynamic() {
+  var numberRandom = Math.floor(Math.random() * 10 + 1);
   return (
     <>
       <Header />
       <main className={styles.main}>
-        <h1>{varText}</h1>
-        <ul>
-          <li>
-            <Link href="/static" legacyBehavior><a>Static</a></Link>
-          </li>
-          <li><Link href="/dynamic" legacyBehavior><a>Dynamic</a></Link></li>
-        </ul>
+        <h1>Dinamica</h1>
+        <Link href={`/dynamic/${numberRandom}`} legacyBehavior><a>link random</a></Link>
+        <Link href="/" legacyBehavior><a>Voltar home</a></Link>
       </main>
     </>
   )
