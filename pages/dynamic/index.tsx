@@ -12,7 +12,7 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Dynamic() {
-  var numberRandom = Math.floor(Math.random() * 10 + 1);
+  var numberRandom = Math.floor(Math.random() * 100 + 1);
   return (
     <>
       <Header />
